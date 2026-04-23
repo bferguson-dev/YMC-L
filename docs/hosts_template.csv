@@ -1,0 +1,4 @@
+# Optional metadata row:
+# domain,example.com
+host,username,label,port,ssh_key,notes
+linux01.example.com,auditor,linux01,22,~/.ssh/id_ed25519,example target

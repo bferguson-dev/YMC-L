@@ -1,0 +1,1 @@
+"""Linux SSH check pack."""

@@ -1,0 +1,316 @@
+profile_name: Linux Baseline
+profile_id: LINUX_BASELINE
+version: '0.1'
+description: >
+  Practical Linux SSH evidence profile for programmatically checkable host
+  controls.   This is the broad starter catalog used by framework profiles.
+checks:
+- check_id: SB-001
+  control_id: BASE-SB-001
+  control_name: OS Release Inventory
+- check_id: SB-002
+  control_id: BASE-SB-002
+  control_name: Package Manager Detection
+- check_id: SB-003
+  control_id: BASE-SB-003
+  control_name: Time Synchronization Service
+- check_id: SB-004
+  control_id: BASE-SB-004
+  control_name: Reboot Required Signal
+- check_id: AC-001
+  control_id: BASE-AC-001
+  control_name: UID 0 Account Review
+- check_id: AC-002
+  control_id: BASE-AC-002
+  control_name: Empty Password Hashes
+- check_id: AC-003
+  control_id: BASE-AC-003
+  control_name: Root Account Lock State
+- check_id: AC-004
+  control_id: BASE-AC-004
+  control_name: Sudoers Syntax
+- check_id: AC-005
+  control_id: BASE-AC-005
+  control_name: Passwordless Sudo Entries
+- check_id: AC-006
+  control_id: BASE-AC-006
+  control_name: Interactive Shell Users
+- check_id: AC-007
+  control_id: BASE-AC-007
+  control_name: Sensitive Account File Permissions
+- check_id: AC-008
+  control_id: BASE-AC-008
+  control_name: Password Maximum Age Policy
+- check_id: SSH-001
+  control_id: BASE-SSH-001
+  control_name: OpenSSH Effective Configuration
+- check_id: SSH-002
+  control_id: BASE-SSH-002
+  control_name: SSH Root Login
+- check_id: SSH-003
+  control_id: BASE-SSH-003
+  control_name: SSH Password Authentication
+- check_id: SSH-004
+  control_id: BASE-SSH-004
+  control_name: SSH Empty Passwords
+- check_id: SSH-005
+  control_id: BASE-SSH-005
+  control_name: SSH X11 Forwarding
+- check_id: SSH-006
+  control_id: BASE-SSH-006
+  control_name: SSH MaxAuthTries
+- check_id: SSH-007
+  control_id: BASE-SSH-007
+  control_name: SSH Weak Ciphers
+- check_id: AU-001
+  control_id: BASE-AU-001
+  control_name: Auditd Service
+- check_id: AU-002
+  control_id: BASE-AU-002
+  control_name: Audit Rule Inventory
+- check_id: AU-003
+  control_id: BASE-AU-003
+  control_name: Journald Persistent Storage
+- check_id: AU-004
+  control_id: BASE-AU-004
+  control_name: Syslog Service
+- check_id: AU-005
+  control_id: BASE-AU-005
+  control_name: Writable Log Files
+- check_id: CM-001
+  control_id: BASE-CM-001
+  control_name: Host Firewall
+- check_id: CM-002
+  control_id: BASE-CM-002
+  control_name: Automatic Update Tooling
+- check_id: CM-003
+  control_id: BASE-CM-003
+  control_name: Package Repository Signature Checks
+- check_id: CM-004
+  control_id: BASE-CM-004
+  control_name: Disk Usage Threshold
+- check_id: SV-001
+  control_id: BASE-SV-001
+  control_name: Telnet Service Absent
+- check_id: SV-002
+  control_id: BASE-SV-002
+  control_name: RSH/Rexec Services Absent
+- check_id: SV-003
+  control_id: BASE-SV-003
+  control_name: TFTP Service Absent
+- check_id: SV-004
+  control_id: BASE-SV-004
+  control_name: Avahi/mDNS Service
+- check_id: SV-005
+  control_id: BASE-SV-005
+  control_name: Listening Services Inventory
+- check_id: SV-006
+  control_id: BASE-SV-006
+  control_name: Cron Service
+- check_id: SV-007
+  control_id: BASE-SV-007
+  control_name: Docker Socket Exposure
+- check_id: FS-001
+  control_id: BASE-FS-001
+  control_name: World-Writable Directories Without Sticky Bit
+- check_id: FS-002
+  control_id: BASE-FS-002
+  control_name: SUID/SGID File Inventory
+- check_id: FS-003
+  control_id: BASE-FS-003
+  control_name: Unowned System Files
+- check_id: FS-004
+  control_id: BASE-FS-004
+  control_name: Temporary Filesystem Mount Options
+- check_id: NH-001
+  control_id: BASE-NH-001
+  control_name: IPv4 Forwarding
+- check_id: NH-002
+  control_id: BASE-NH-002
+  control_name: IPv6 Forwarding
+- check_id: NH-003
+  control_id: BASE-NH-003
+  control_name: ICMP Redirect Acceptance
+- check_id: NH-004
+  control_id: BASE-NH-004
+  control_name: ICMP Redirect Sending
+- check_id: NH-005
+  control_id: BASE-NH-005
+  control_name: Source Routing
+- check_id: NH-006
+  control_id: BASE-NH-006
+  control_name: TCP SYN Cookies
+- check_id: NH-007
+  control_id: BASE-NH-007
+  control_name: Kernel Dmesg Restriction
+- check_id: NH-008
+  control_id: BASE-NH-008
+  control_name: Ptrace Scope
+- check_id: NH-009
+  control_id: BASE-NH-009
+  control_name: Address Space Layout Randomization
+- check_id: SI-001
+  control_id: BASE-SI-001
+  control_name: Mandatory Access Control
+- check_id: SI-002
+  control_id: BASE-SI-002
+  control_name: File Integrity Tooling
+- check_id: SI-003
+  control_id: BASE-SI-003
+  control_name: Antivirus/EDR Inventory
+- check_id: SI-004
+  control_id: BASE-SI-004
+  control_name: Core Dump Restrictions
+- check_id: CT-001
+  control_id: BASE-CT-001
+  control_name: Virtualization Context
+- check_id: CT-002
+  control_id: BASE-CT-002
+  control_name: Docker Privileged Containers
+- check_id: AC-009
+  control_id: BASE-AC-009
+  control_name: Password Minimum Age Policy
+- check_id: AC-010
+  control_id: BASE-AC-010
+  control_name: Password Warning Age Policy
+- check_id: AC-011
+  control_id: BASE-AC-011
+  control_name: Password Hashing Algorithm
+- check_id: AC-012
+  control_id: BASE-AC-012
+  control_name: Default Login UMASK
+- check_id: AC-013
+  control_id: BASE-AC-013
+  control_name: Duplicate UIDs
+- check_id: AC-014
+  control_id: BASE-AC-014
+  control_name: Duplicate GIDs
+- check_id: AC-015
+  control_id: BASE-AC-015
+  control_name: Duplicate User Names
+- check_id: AC-016
+  control_id: BASE-AC-016
+  control_name: Duplicate Group Names
+- check_id: AC-017
+  control_id: BASE-AC-017
+  control_name: Interactive User Home Directories
+- check_id: AC-018
+  control_id: BASE-AC-018
+  control_name: Interactive User Home Ownership
+- check_id: AC-019
+  control_id: BASE-AC-019
+  control_name: Interactive User Home Write Permissions
+- check_id: SSH-008
+  control_id: BASE-SSH-008
+  control_name: SSH LoginGraceTime
+- check_id: SSH-009
+  control_id: BASE-SSH-009
+  control_name: SSH ClientAliveInterval
+- check_id: SSH-010
+  control_id: BASE-SSH-010
+  control_name: SSH Hostbased Authentication
+- check_id: SSH-011
+  control_id: BASE-SSH-011
+  control_name: SSH IgnoreRhosts
+- check_id: SSH-012
+  control_id: BASE-SSH-012
+  control_name: SSH PermitUserEnvironment
+- check_id: SSH-013
+  control_id: BASE-SSH-013
+  control_name: SSH TCP Forwarding
+- check_id: SSH-014
+  control_id: BASE-SSH-014
+  control_name: SSH GatewayPorts
+- check_id: SSH-015
+  control_id: BASE-SSH-015
+  control_name: SSH LogLevel
+- check_id: SSH-016
+  control_id: BASE-SSH-016
+  control_name: SSH Weak MACs
+- check_id: SSH-017
+  control_id: BASE-SSH-017
+  control_name: SSH Weak Key Exchanges
+- check_id: AU-006
+  control_id: BASE-AU-006
+  control_name: Auditd Boot Enablement
+- check_id: AU-007
+  control_id: BASE-AU-007
+  control_name: Audit Failure Mode
+- check_id: AU-008
+  control_id: BASE-AU-008
+  control_name: Remote Syslog Forwarding
+- check_id: AU-009
+  control_id: BASE-AU-009
+  control_name: Logrotate Configuration
+- check_id: SV-008
+  control_id: BASE-SV-008
+  control_name: NFS Server Service
+- check_id: SV-009
+  control_id: BASE-SV-009
+  control_name: SMB Server Service
+- check_id: SV-010
+  control_id: BASE-SV-010
+  control_name: CUPS Print Service
+- check_id: SV-011
+  control_id: BASE-SV-011
+  control_name: RPCbind Service
+- check_id: SV-012
+  control_id: BASE-SV-012
+  control_name: FTP Server Service
+- check_id: FS-005
+  control_id: BASE-FS-005
+  control_name: SSH Server Config Permissions
+- check_id: FS-006
+  control_id: BASE-FS-006
+  control_name: Boot Directory Permissions
+- check_id: FS-007
+  control_id: BASE-FS-007
+  control_name: Netrc File Presence
+- check_id: FS-008
+  control_id: BASE-FS-008
+  control_name: Cron File Write Permissions
+- check_id: FS-009
+  control_id: BASE-FS-009
+  control_name: Cron Allow/Deny File Permissions
+- check_id: FS-010
+  control_id: BASE-FS-010
+  control_name: Cramfs Kernel Module
+- check_id: FS-011
+  control_id: BASE-FS-011
+  control_name: UDF Kernel Module
+- check_id: FS-012
+  control_id: BASE-FS-012
+  control_name: USB Storage Kernel Module
+- check_id: NH-010
+  control_id: BASE-NH-010
+  control_name: Secure ICMP Redirect Acceptance
+- check_id: NH-011
+  control_id: BASE-NH-011
+  control_name: Reverse Path Filtering
+- check_id: NH-012
+  control_id: BASE-NH-012
+  control_name: Martian Packet Logging
+- check_id: NH-013
+  control_id: BASE-NH-013
+  control_name: IPv6 Redirect Acceptance
+- check_id: NH-014
+  control_id: BASE-NH-014
+  control_name: IPv6 Source Routing
+- check_id: NH-015
+  control_id: BASE-NH-015
+  control_name: Protected Hardlinks
+- check_id: NH-016
+  control_id: BASE-NH-016
+  control_name: Protected Symlinks
+- check_id: SI-005
+  control_id: BASE-SI-005
+  control_name: Systemd Coredump Storage
+- check_id: SI-006
+  control_id: BASE-SI-006
+  control_name: PAM Password Quality
+- check_id: SI-007
+  control_id: BASE-SI-007
+  control_name: Account Lockout Controls
+- check_id: SI-008
+  control_id: BASE-SI-008
+  control_name: Failed Login Inventory

@@ -1,0 +1,8 @@
+# SSH transport for agentless Linux scanning.
+paramiko==3.5.1
+
+# YAML parsing for settings and compliance profiles.
+pyyaml==6.0.2
+
+# Cross-platform terminal color output.
+colorama==0.4.6

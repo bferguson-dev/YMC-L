@@ -1,0 +1,316 @@
+profile_name: DISA STIG Linux Evidence Starter
+profile_id: DISA_STIG
+version: starter mapping
+description: >
+  Starter Linux evidence profile aligned to DISA STIG-style technical hardening
+  areas. Distro-specific STIG IDs should refine this later.
+checks:
+- check_id: SB-001
+  control_id: STIG-System-Inventory
+  control_name: System Inventory
+- check_id: SB-003
+  control_id: STIG-Time
+  control_name: Time Synchronization
+- check_id: AC-001
+  control_id: STIG-Access
+  control_name: UID 0 Accounts
+- check_id: AC-002
+  control_id: STIG-Access
+  control_name: Empty Passwords
+- check_id: AC-003
+  control_id: STIG-Access
+  control_name: Root Account
+- check_id: AC-004
+  control_id: STIG-Sudo
+  control_name: Sudoers Syntax
+- check_id: AC-005
+  control_id: STIG-Sudo
+  control_name: Passwordless Sudo
+- check_id: AC-006
+  control_id: STIG-Accounts
+  control_name: Interactive Shell Users
+- check_id: AC-007
+  control_id: STIG-Files
+  control_name: Sensitive Account File Permissions
+- check_id: AC-008
+  control_id: STIG-Passwords
+  control_name: Password Maximum Age
+- check_id: SSH-001
+  control_id: STIG-SSH
+  control_name: OpenSSH Effective Configuration
+- check_id: SSH-002
+  control_id: STIG-SSH
+  control_name: SSH Root Login
+- check_id: SSH-003
+  control_id: STIG-SSH
+  control_name: SSH Password Authentication
+- check_id: SSH-004
+  control_id: STIG-SSH
+  control_name: SSH Empty Passwords
+- check_id: SSH-005
+  control_id: STIG-SSH
+  control_name: SSH X11 Forwarding
+- check_id: SSH-006
+  control_id: STIG-SSH
+  control_name: SSH MaxAuthTries
+- check_id: SSH-007
+  control_id: STIG-SSH
+  control_name: SSH Weak Ciphers
+- check_id: AU-001
+  control_id: STIG-Audit
+  control_name: Auditd Service
+- check_id: AU-002
+  control_id: STIG-Audit
+  control_name: Audit Rule Inventory
+- check_id: AU-003
+  control_id: STIG-Logging
+  control_name: Journald Persistent Storage
+- check_id: AU-004
+  control_id: STIG-Logging
+  control_name: Syslog Service
+- check_id: AU-005
+  control_id: STIG-Logging
+  control_name: Writable Log Files
+- check_id: CM-001
+  control_id: STIG-Firewall
+  control_name: Host Firewall
+- check_id: CM-002
+  control_id: STIG-Patching
+  control_name: Automatic Update Tooling
+- check_id: CM-003
+  control_id: STIG-Packages
+  control_name: Package Repository Signature Checks
+- check_id: SV-001
+  control_id: STIG-Services
+  control_name: Telnet Service Absent
+- check_id: SV-002
+  control_id: STIG-Services
+  control_name: RSH/Rexec Services Absent
+- check_id: SV-003
+  control_id: STIG-Services
+  control_name: TFTP Service Absent
+- check_id: SV-004
+  control_id: STIG-Services
+  control_name: Avahi/mDNS Service
+- check_id: FS-001
+  control_id: STIG-Files
+  control_name: World-Writable Directories Without Sticky Bit
+- check_id: FS-002
+  control_id: STIG-Files
+  control_name: SUID/SGID File Inventory
+- check_id: FS-003
+  control_id: STIG-Files
+  control_name: Unowned System Files
+- check_id: FS-004
+  control_id: STIG-Mounts
+  control_name: Temporary Filesystem Mount Options
+- check_id: NH-001
+  control_id: STIG-Sysctl
+  control_name: IPv4 Forwarding
+- check_id: NH-002
+  control_id: STIG-Sysctl
+  control_name: IPv6 Forwarding
+- check_id: NH-003
+  control_id: STIG-Sysctl
+  control_name: ICMP Redirect Acceptance
+- check_id: NH-004
+  control_id: STIG-Sysctl
+  control_name: ICMP Redirect Sending
+- check_id: NH-005
+  control_id: STIG-Sysctl
+  control_name: Source Routing
+- check_id: NH-006
+  control_id: STIG-Sysctl
+  control_name: TCP SYN Cookies
+- check_id: NH-007
+  control_id: STIG-Kernel
+  control_name: Kernel Dmesg Restriction
+- check_id: NH-008
+  control_id: STIG-Kernel
+  control_name: Ptrace Scope
+- check_id: NH-009
+  control_id: STIG-Kernel
+  control_name: ASLR
+- check_id: SI-001
+  control_id: STIG-MAC
+  control_name: Mandatory Access Control
+- check_id: SI-002
+  control_id: STIG-Integrity
+  control_name: File Integrity Tooling
+- check_id: SI-004
+  control_id: STIG-Kernel
+  control_name: Core Dump Restrictions
+- check_id: SB-002
+  control_id: STIG-SB
+  control_name: Package Manager Detection
+- check_id: SB-004
+  control_id: STIG-SB
+  control_name: Reboot Required Signal
+- check_id: AC-009
+  control_id: STIG-Password
+  control_name: Password Minimum Age Policy
+- check_id: AC-010
+  control_id: STIG-Password
+  control_name: Password Warning Age Policy
+- check_id: AC-011
+  control_id: STIG-Password
+  control_name: Password Hashing Algorithm
+- check_id: AC-012
+  control_id: STIG-Password
+  control_name: Default Login UMASK
+- check_id: AC-013
+  control_id: STIG-Accounts
+  control_name: Duplicate UIDs
+- check_id: AC-014
+  control_id: STIG-Accounts
+  control_name: Duplicate GIDs
+- check_id: AC-015
+  control_id: STIG-Accounts
+  control_name: Duplicate User Names
+- check_id: AC-016
+  control_id: STIG-Accounts
+  control_name: Duplicate Group Names
+- check_id: AC-017
+  control_id: STIG-Accounts
+  control_name: Interactive User Home Directories
+- check_id: AC-018
+  control_id: STIG-Accounts
+  control_name: Interactive User Home Ownership
+- check_id: AC-019
+  control_id: STIG-Accounts
+  control_name: Interactive User Home Write Permissions
+- check_id: SSH-008
+  control_id: STIG-SSH
+  control_name: SSH LoginGraceTime
+- check_id: SSH-009
+  control_id: STIG-SSH
+  control_name: SSH ClientAliveInterval
+- check_id: SSH-010
+  control_id: STIG-SSH
+  control_name: SSH Hostbased Authentication
+- check_id: SSH-011
+  control_id: STIG-SSH
+  control_name: SSH IgnoreRhosts
+- check_id: SSH-012
+  control_id: STIG-SSH
+  control_name: SSH PermitUserEnvironment
+- check_id: SSH-013
+  control_id: STIG-SSH
+  control_name: SSH TCP Forwarding
+- check_id: SSH-014
+  control_id: STIG-SSH
+  control_name: SSH GatewayPorts
+- check_id: SSH-015
+  control_id: STIG-SSH
+  control_name: SSH LogLevel
+- check_id: SSH-016
+  control_id: STIG-SSH
+  control_name: SSH Weak MACs
+- check_id: SSH-017
+  control_id: STIG-SSH
+  control_name: SSH Weak Key Exchanges
+- check_id: AU-006
+  control_id: STIG-Audit
+  control_name: Auditd Boot Enablement
+- check_id: AU-007
+  control_id: STIG-Audit
+  control_name: Audit Failure Mode
+- check_id: AU-008
+  control_id: STIG-Audit
+  control_name: Remote Syslog Forwarding
+- check_id: AU-009
+  control_id: STIG-Audit
+  control_name: Logrotate Configuration
+- check_id: CM-004
+  control_id: STIG-Configuration
+  control_name: Disk Usage Threshold
+- check_id: SV-005
+  control_id: STIG-Services
+  control_name: Listening Services Inventory
+- check_id: SV-006
+  control_id: STIG-Services
+  control_name: Cron Service
+- check_id: SV-007
+  control_id: STIG-Services
+  control_name: Docker Socket Exposure
+- check_id: SV-008
+  control_id: STIG-Services
+  control_name: NFS Server Service
+- check_id: SV-009
+  control_id: STIG-Services
+  control_name: SMB Server Service
+- check_id: SV-010
+  control_id: STIG-Services
+  control_name: CUPS Print Service
+- check_id: SV-011
+  control_id: STIG-Services
+  control_name: RPCbind Service
+- check_id: SV-012
+  control_id: STIG-Services
+  control_name: FTP Server Service
+- check_id: FS-005
+  control_id: STIG-Filesystem
+  control_name: SSH Server Config Permissions
+- check_id: FS-006
+  control_id: STIG-Filesystem
+  control_name: Boot Directory Permissions
+- check_id: FS-007
+  control_id: STIG-Filesystem
+  control_name: Netrc File Presence
+- check_id: FS-008
+  control_id: STIG-Filesystem
+  control_name: Cron File Write Permissions
+- check_id: FS-009
+  control_id: STIG-Filesystem
+  control_name: Cron Allow/Deny File Permissions
+- check_id: FS-010
+  control_id: STIG-KernelModules
+  control_name: Cramfs Kernel Module
+- check_id: FS-011
+  control_id: STIG-KernelModules
+  control_name: UDF Kernel Module
+- check_id: FS-012
+  control_id: STIG-KernelModules
+  control_name: USB Storage Kernel Module
+- check_id: NH-010
+  control_id: STIG-Sysctl
+  control_name: Secure ICMP Redirect Acceptance
+- check_id: NH-011
+  control_id: STIG-Sysctl
+  control_name: Reverse Path Filtering
+- check_id: NH-012
+  control_id: STIG-Sysctl
+  control_name: Martian Packet Logging
+- check_id: NH-013
+  control_id: STIG-Sysctl
+  control_name: IPv6 Redirect Acceptance
+- check_id: NH-014
+  control_id: STIG-Sysctl
+  control_name: IPv6 Source Routing
+- check_id: NH-015
+  control_id: STIG-Sysctl
+  control_name: Protected Hardlinks
+- check_id: NH-016
+  control_id: STIG-Sysctl
+  control_name: Protected Symlinks
+- check_id: SI-003
+  control_id: STIG-Integrity
+  control_name: Antivirus/EDR Inventory
+- check_id: SI-005
+  control_id: STIG-Integrity
+  control_name: Systemd Coredump Storage
+- check_id: SI-006
+  control_id: STIG-Integrity
+  control_name: PAM Password Quality
+- check_id: SI-007
+  control_id: STIG-Integrity
+  control_name: Account Lockout Controls
+- check_id: SI-008
+  control_id: STIG-Integrity
+  control_name: Failed Login Inventory
+- check_id: CT-001
+  control_id: STIG-Containers
+  control_name: Virtualization Context
+- check_id: CT-002
+  control_id: STIG-Containers
+  control_name: Docker Privileged Containers

@@ -1,0 +1,53 @@
+# =============================================================================
+# YMC-L - Program Default Settings
+# =============================================================================
+#
+# Priority, lowest to highest:
+#   1. config/settings.yaml
+#   2. ~/.ymc-l/settings.yaml
+#   3. named config profile
+#   4. COLLECTOR_* environment variables
+#   5. CLI flags
+#
+# Secrets do not belong in this file. Use SSH agent/key files, prompt mode,
+# COLLECTOR_PASSWORD, or COLLECTOR_PASSWORD_<USERNAME>.
+
+cli_defaults:
+  profile: nist_800_53
+  format: html
+  output_dir:
+  domain:
+  username:
+  ssh_key:
+  ssh_port: 22
+  config:
+  verbose: false
+  no_color: false
+  no_banner: false
+  prompt_password: false
+  use_sudo: false
+
+connection:
+  connection_timeout: 30
+  read_timeout: 120
+  strict_host_key_checking: true
+
+evidence:
+  max_password_age_days: 90
+  min_password_age_days: 1
+  password_warn_age_days: 7
+  ssh_max_auth_tries: 4
+  ssh_login_grace_time_seconds: 60
+  ssh_client_alive_interval: 900
+  disk_usage_warning_percent: 85
+  encrypt_method_allowed_values: [yescrypt, sha512]
+  umask_allowed_values: ["027", "077"]
+  ptrace_scope_allowed_values: ["1", "2", "3"]
+  reverse_path_filter_values: ["1"]
+  require_file_integrity_tooling: false
+  require_malware_protection: false
+  require_pam_password_quality: false
+  require_account_lockout_controls: false
+
+output:
+  filename_timestamp_format: "%Y%m%d_%H%M%S"

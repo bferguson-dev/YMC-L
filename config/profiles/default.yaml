@@ -1,0 +1,6 @@
+# Default named config profile. Values here override config/settings.yaml
+# when selected with --config default.
+cli_defaults: {}
+connection: {}
+evidence: {}
+output: {}
